@@ -1,0 +1,145 @@
+header h2 { 
+  text-align: center;
+  font-family: Georgia, Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30pt;
+  text-decoration: none;
+  color: DarkBlue;
+}
+
+h3 {
+  text-align: center;
+  font-family: Georgia, Times, serif;
+} 
+
+html {
+  padding-top:0;
+  background: DarkBlue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(DarkBlue, Cyan, DarkBlue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(DarkBlue, Cyan, DarkBlue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(DarkBlue, Cyan, DarkBlue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(DarkBlue, Cyan, DarkBlue); /* Standard syntax */
+}
+
+body {
+  background-color: White;
+  margin: 0 auto; 
+  padding-bottom: 0px;
+  text-align: center;
+  width: 960px;
+}
+
+#main {
+  min-height: 960px;
+}
+
+#topnav a {
+  display: inline-block;
+  text-align: center;
+  vertical-align:top;
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: DarkBlue;
+  width: 18%;
+  height:38px;
+  line-height: 38px;
+/*  border-style: solid solid solid solid;*/
+}
+
+#topnav a:hover {
+  background-color: AliceBlue;
+}
+
+#topnav {
+  height:40px;
+  background-color: SkyBlue;
+}
+
+#topnav {
+  border-style: none none solid none;
+  border-color: DeepSkyBlue;
+}
+
+#logo {
+  display: inline-block;
+  vertical-align: middle;
+  width:160px;
+}
+
+#footer {
+  background-color: SkyBlue;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+table {
+	width: 100%;
+}
+
+#technology td, #solutions td {
+  vertical-align: top;
+  width:33%;
+  text-align: center;
+  padding-left: 20px;	
+  padding-right: 20px;
+}
+
+#solutions, #technology {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#measurements, #monitoring, #missions {
+	width: 256px;	
+}
+
+#solarboat, #sensors, #systems {
+	width: 256px;	
+}
+
+#flying_dutchman {
+	width: 100%;
+}
+
+#saltonsea {
+  background-image: url('images/saltonsea.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  height: 533px;
+}
+
+p {
+  font-family: Arial, serif;
+  font-size: 16pt;
+  text-align: left;
+}
+
+#contacts, #about, #sponsors {
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#contacts table {
+	width: 100%;	
+}
+
+#phone, #email {
+	vertical-align: middle;
+	text-align: center;
+}
+
+#donate {
+	text-align: center;
+	padding: 20px;
+}
+
+
+
