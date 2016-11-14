@@ -131,7 +131,7 @@ p {
 	width: 100%;	
 }
 
-#phone, #email {
+#phone, #email, #github {
 	vertical-align: middle;
 	text-align: center;
 }
