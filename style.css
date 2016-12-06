@@ -75,7 +75,7 @@ body {
   margin: 0px;
 }
 
-table {
+#solutions table, #technology table {
 	width: 100%;
 }
 
@@ -100,7 +100,7 @@ table {
 	width: 256px;	
 }
 
-#flying_dutchman {
+#flying_dutchman, #raider_2 {
 	width: 100%;
 }
 
@@ -121,7 +121,7 @@ p {
   text-align: left;
 }
 
-#contacts, #about, #sponsors {
+#contacts, #about, #sponsors, #usv {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
@@ -140,6 +140,5 @@ p {
 	text-align: center;
 	padding: 20px;
 }
-
 
 
