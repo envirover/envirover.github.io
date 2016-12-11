@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>ENVIROVER - Mission Control</title>
+<link rel="stylesheet" media="screen" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+	content="Mission planing, data collection, storing and processing systems.">
+<meta name="keywords"
+	content="autonomous boats, ocean robots, mission control, mission planing, iot, usv">
+<meta name="robots" content="all">
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script',
+			'https://www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-86743417-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	<div id="topnav">
+		<a href="index.html"><img id="logo" src="images/logo.png"
+			alt="ENVIROVER" /></a> <a href="index.html#solutions">SOLUTIONS</a> <a
+			href="index.html#technology">TECHNOLOGY</a> <a
+			href="index.html#about">ABOUT</a> <a href="index.html#contacts">CONTACTS</a>
+	</div>
+	<div id="main">
+		<header>
+			<h2>Mission Control</h2>
+		</header>
+		<div class="section" id="mission_control_section">
+			<p>The USVs suport multiple communication and mission control
+				options. Essentially, they are connected "things" those report they
+				status, receive commands, and periodically or on demand transfer the
+				collected data.</p>
+			<table>
+				<tr>
+					<td><img id="apm_planner_img" alt="APM Planner"
+						src="images/apm_planner.jpg"></td>
+					<td><p>
+							<a
+								href="http://ardupilot.org/planner/docs/mission-planner-overview.html">ArduPilot's
+								Mission Planer</a> running on a personal computer is used for
+							short-range mission control using direct radio communication with
+							USVs.
+						</p></td>
+				</tr>
+				<tr>
+					<td><img id="iridium_img" alt="Long range mission"
+						src="images/iridium.jpg"></td>
+					<td>
+						<p>
+							Long-range missions require satellite communication using <a
+								href="http://www.rock7mobile.com/products-core">Iridium
+								short burst data (SBD)</a> communication service with global
+							coverage.
+						</p>
+						<p>Close to shores, where cellular data services are
+							available, they could be used instead of more expensive satellite
+							communication to controll the USVs and "unload" the collected
+							data.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<header>
+			<h2>Data Processing</h2>
+		</header>
+		<div class="section" id="data_processing_section">
+			<table>
+				<tr>
+					<td><img id="systems_img" alt="Data Processing"
+						src="images/systems.jpg"></td>
+					<td>
+						<p>Data collected by the USVs are transfered to the data storage
+							services. The stored data are automatically processed and
+							converted to the requested data formats and made available for download or as ready-to-use online maps in <a href="http://arcgis.com">ArcGIS Online</a>.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<p>©Copyright 2016 Envirover</p>
+	</div>
+</body>
+</html>

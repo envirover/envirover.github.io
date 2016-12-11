@@ -121,7 +121,8 @@ p {
   text-align: left;
 }
 
-#contacts, #about, #sponsors, #usv, #sensors_section {
+#contacts, #about, #sponsors, #usv, 
+#sensors_section, #mission_control_section, #data_processing_section {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
@@ -141,6 +142,8 @@ p {
 	padding: 20px;
 }
 
-#sonar, #camera, #hydrophone, #water_quality_sensors {
+#sonar, #camera, #hydrophone, #water_quality_sensors, 
+#apm_planner_img, #iridium_img, #systems_img {
 	width: 256px;
+	padding-right: 10px;
 }
