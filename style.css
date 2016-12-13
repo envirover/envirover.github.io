@@ -30,6 +30,10 @@ body {
   width: 960px;
 }
 
+td {
+  vertical-align: top;	
+}
+
 #main {
   min-height: 960px;
 }
@@ -121,8 +125,9 @@ p {
   text-align: left;
 }
 
-#contacts, #about, #sponsors, #usv, 
-#sensors_section, #mission_control_section, #data_processing_section {
+#contacts, #about, #sponsors, #usv, #sensors_section, 
+#mission_control_section, #data_processing_section,
+#ocean_measurements {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
@@ -145,5 +150,10 @@ p {
 #sonar, #camera, #hydrophone, #water_quality_sensors, 
 #apm_planner_img, #iridium_img, #systems_img {
 	width: 256px;
+	padding-right: 10px;
+}
+
+#raider_2, #spl {
+	width: 400px;
 	padding-right: 10px;
 }
