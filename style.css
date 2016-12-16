@@ -148,12 +148,12 @@ p {
 }
 
 #sonar, #camera, #hydrophone, #water_quality_sensors, 
-#apm_planner_img, #iridium_img, #systems_img {
+#apm_planner_img, #iridium_img, #systems_img, #ocean_monitoring, #search {
 	width: 256px;
 	padding-right: 10px;
 }
 
-#raider_2, #spl {
+#raider_2, #spl, #stationary_platform {
 	width: 400px;
 	padding-right: 10px;
 }
