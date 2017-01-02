@@ -127,7 +127,7 @@ p {
 
 #contacts, #about, #sponsors, #usv, #sensors_section, 
 #mission_control_section, #data_processing_section,
-#ocean_measurements, #environmental_monitoring {
+#ocean_measurements, #environmental_monitoring, #custom_missions {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
@@ -149,7 +149,7 @@ p {
 
 #sonar, #camera, #hydrophone, #water_quality_sensors, 
 #apm_planner_img, #iridium_img, #systems_img, #ocean_monitoring, #search,
-#data_gathering, #wildlife_monitoring {
+#data_gathering, #wildlife_monitoring, #unmanned_vehicles, #custom_sensors {
 	width: 256px;
 	padding-right: 10px;
 }
