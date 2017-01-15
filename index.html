@@ -5,13 +5,37 @@
 <head>
 	<meta charset="utf-8">
 	<title>ENVIROVER - Environmental Intelligence</title>
-	<link rel="stylesheet" media="screen" href="style.css">
+<!-- 	<link rel="stylesheet" media="screen" href="style.css"> -->
+	<link rel="stylesheet" href="w3.css">
 	<link rel="icon" href="http://envirover.com/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Autonomous vehicles for collecting environmental data, monitoring, and search missions.">
 	<meta name="keywords" content="autonomous boats, solar powered, wing sail, ocean robots, water quality, salton sea">
 	<meta name="robots" content="all">
-	<script>window.twttr = (function(d, s, id) {
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div >
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="index.html" class="w3-margin-left"><img id="logo" src="images/logo.png" alt="ENVIROVER"/></a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="index.html#solutions" class="w3-left">SOLUTIONS</a>
+      <a href="index.html#technology" class="w3-left">TECHNOLOGY</a>
+      <a href="index.html#about" class="w3-left">ABOUT</a>
+      <a href="index.html#contacts" class="w3-left w3-margin-right">CONTACTS</a>
+    </li>
+  </ul>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="images/header.jpg" alt="Environmental Intelligence" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-blue w3-opacity-min"><b>Environmental</b></span> <span class="w3-hide-small w3-text-light-grey">Intelligence</span></h1>
+  </div>
+  <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
   if (d.getElementById(id)) return t;
@@ -26,9 +50,9 @@
   };
 
   return t;
-}(document, "script", "twitter-wjs"));
-	</script>
-	<script>
+  }(document, "script", "twitter-wjs"));
+  </script>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -36,105 +60,94 @@
 
   ga('create', 'UA-86743417-1', 'auto');
   ga('send', 'pageview');
-    </script>
-</head>
+  </script>
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <!-- Solutions Section -->
+  <div class="w3-container w3-padding-32" id="solutions">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">SOLUTIONS</h3>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/monitoring.jpg" alt="Environmental Monitoring" style="width:100%">
+      <h3>Environmental Monitoring</h3>
+      <p>Observations and documentation of physical, chemical, and biological aspects of environment using monitoring equipment installed at the requested site.</p>
+      <p><a href="monitoring.html">more...</a></p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/measurements.jpg" alt="Ocean Exploration" style="width:100%">
+      <h3>Ocean Exploration</h3>
+      <p>Search, observations, and documentation of physical, chemical, and biological aspects of the ocean using unmanned surface vehicles.</p>
+      <p><a href="ocean_exploration.html">more...</a></p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/missions2.jpg" alt="Custom Missions" style="width:100%">
+      <h3>Custom Missions</h3>
+      <p>Our goal is to be able to measure anything, anywhere, and anytime. We are open to any challenges and welcome any opportunity to provide new or better solutions and 
+         push the limits of our technology.</p>
+      <p><a href="custom_missions.html">more...</a></p>
+    </div>
+  </div>
 
-<body>
-	<div id="topnav">
-	    <a href="index.html"><img id="logo" src="images/logo.png" alt="ENVIROVER"/></a>
-	    <a href="index.html#solutions">SOLUTIONS</a>
-	    <a href="index.html#technology">TECHNOLOGY</a>
-	    <a href="index.html#about">ABOUT</a>
-	    <a href="index.html#contacts">CONTACTS</a>
-	</div>
-	<div id="main">
-	<div class="section" id="solutions">
-		<header>
-			<h2>SOLUTIONS</h2>
-		</header>
-		<table>
-			<tr>
-				<td><a href="monitoring.html"></a><img src="images/monitoring.jpg" id="monitoring" alt="monitoring"/><a></a></td>
-				<td><a href="ocean_exploration.html"><img src="images/measurements.jpg" id="measurements" alt="measurements"/></a></td>
-				<td><a href="custom_missions.html"><img src="images/missions2.jpg" id="missions" alt="misions"/></a></td>
-			</tr>
-			<tr>
-				<td>
-					<h3><a href="monitoring.html">Environmental Monitoring</a></h3>
-					<p>Observations and documentation of physical, chemical, and biological aspects of environment using monitoring equipment installed at the requested site.</p>
-				</td>
-				<td>
-					<h3><a href="ocean_exploration.html">Ocean Exploration</a></h3>
-					<p>Search, observations, and documentation of physical, chemical, and biological aspects of the ocean using unmanned surface vehicles.</p>
-				</td>
-				<td>
-					<h3><a href="custom_missions.html">Custom Missions</a></h3>
-					<p>Our goal is to be able to measure anything, anywhere, and anytime. We are open to any challenges and welcome any opportunity to provide new or better solutions and 
- 			           push the limits of our technology.</p>
-				</td>
-			</tr>
-		</table>
-	</div>
-	<div class="section" id="technology">
-		<header>
-			<h2>TECHNOLOGY</h2>
-		</header>
-		<table>
-			<tr>
-				<td><a href="sensors.html"><img src="images/sonar.jpg" id="sensors" alt="Sensors"/></a></td>
-				<td><a href="platforms.html"><img src="images/solarboat.jpg" id="solarboat" alt="Platforms"/></a></td>
-				<td><a href="mission_control.html"><img src="images/iridium.jpg" id="systems" alt="Systems"/></a></td>
-			</tr>
-			<tr>
-				<td>
-					<h3><a href="sensors.html">Sensors</a></h3>
-					<p>Our technology supports variety of sensors for measuring chemical and physical characteristics of air and water, as well as sonars, photo and video cameras. 
-					Actuators such as winches or gimbals could be used to control position and orientation of the sensors.</p>
-				</td>
-				<td>
-					<h3><a href="platforms.html">Platforms</a></h3>
-					<p>Platforms supply sensors and actuators with power, collect data from the sensors, and transfer the data to the data store. Mobile platforms also deliver sensors to the site.</p>
-				</td>
-				<td>
-					<h3><a href="mission_control.html">Data Processing</a></h3>
-					<p>Data collected by the platforms are automatically processed and
-					   converted to the requested data formats and made available for download or as online maps.</p>
-				</td>
-			</tr>
-		</table>
-	</div>
-	<div class="section" id="about">
-		<header>
-			<h2>ABOUT</h2>
-		</header>
-		<p>Envirover explores new ways of exploring our planet. Our mission is providing efficient ways of collecting environmental data for research, conservation, and restoration projects.</p>
-	</div>
-	<div class="section" id="contacts">
-		<header>
-			<h2>CONTACTS</h2>
-		</header>
-		<table>
-			<tr>
-				<td>
-					<a href="tel:+1-949-438-3648"><img src="images/phone-icon.png" alt="phone" id="phone"/>&nbsp;949-438-3648</a>
-				</td>
-				<td>		
-					<a href="mailto:pb@envirover.com"><img src="images/mail-icon.png" alt="e-mail" id="email"/>&nbsp;pb@envirover.com</a>
-				</td>
-				<td>
-					<a href="https://twitter.com/envirover" class="twitter-follow-button" data-show-count="false">Follow @envirover</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</td>
-				<td>
-					<a href="http://github.com/envirover"><img src="images/GitHub-Mark-32px.png" alt="GitHub" id="github"/>&nbsp;GitHub</a>
-				</td>
-			</tr>
-		</table>
-		<br/>
-		<div id="donate"><a href="sponsors.html">Contribute to the Project.</a></div>
-	</div>
-	</div>
-	<div id="footer">
-	<p>©Copyright 2016 Envirover</p>
-	</div>
+  <!-- Technology Section -->
+  <div class="w3-container w3-padding-32" id="technology">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">TECHNOLOGY</h3>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/sonar.jpg" alt="Sensors" style="width:100%">
+      <h3>Sensors</h3>
+      <p>Our technology supports variety of sensors for measuring chemical and physical characteristics of air and water, as well as sonars, photo and video cameras. 
+ 		 Actuators such as winches or gimbals could be used to control position and orientation of the sensors.</p>
+      <p><a href="sensors.html">more...</a></p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/solarboat.jpg" alt="Platforms" style="width:100%">
+      <h3>Platforms</h3>
+      <p>Platforms supply sensors and actuators with power, collect data from the sensors, and transfer the data to the data store. Mobile platforms also deliver sensors to the site.</p>
+      <p><a href="platforms.html">more...</a></p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <img src="images/iridium.jpg" alt="Data Processing" style="width:100%">
+      <h3>Data Processing</h3>
+      <p>The data collected by the platforms are automatically processed and
+  	     converted to the requested data formats and made available for download or as online maps.</p>
+      <p><a href="mission_control.html">more...</a></p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">ABOUT</h3>
+    <p>Envirover explores new ways of exploring our planet. Our mission is providing efficient ways of collecting environmental data for research, conservation, and restoration projects.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contacts">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">CONTACTS</h3>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+	    <a href="tel:+1-949-438-3648"><img src="images/phone-icon.png" alt="phone" id="phone"/>&nbsp;949-438-3648</a>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+		<a href="mailto:pb@envirover.com"><img src="images/mail-icon.png" alt="e-mail" id="email"/>&nbsp;pb@envirover.com</a>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    	<a href="https://twitter.com/envirover" class="twitter-follow-button" data-show-count="false">Follow @envirover</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+	    <a href="http://github.com/envirover"><img src="images/GitHub-Mark-32px.png" alt="GitHub" id="github"/>&nbsp;GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-16">
+  <p>©Copyright 2017 Envirover</p>
+  <a href="sponsors.html">Contribute to the Project.</a>
+</footer>
+
 </body>
 </html>
