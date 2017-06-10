@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>ENVIROVER - SPL Global Telemetry</title>
+<!-- 	<link rel="stylesheet" media="screen" href="style.css"> -->
+	<link rel="stylesheet" href="w3.css">
+	<link rel="icon" href="http://envirover.com/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Global satellite telemetry for ArduPilot drones. Control your robot in the middle of the ocean.">
+	<meta name="keywords" content="ardupilot, mavlink, rockblock, satellite, telemetry, iridium">
+	<meta name="robots" content="all">
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div>
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="index.html" class="w3-margin-left"><img id="logo" src="images/logo.png" alt="ENVIROVER"/></a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="index.html#solutions" class="w3-left">SOLUTIONS</a>
+      <a href="index.html#technology" class="w3-left">TECHNOLOGY</a>
+      <a href="index.html#about" class="w3-left">ABOUT</a>
+      <a href="index.html#contacts" class="w3-left w3-margin-right">CONTACTS</a>
+    </li>
+  </ul>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86743417-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+   <div class="w3-container w3-padding-32">
+     <img src="images/spl_logo.png" alt="SPL global telemetry">
+     <p>SPL is a global satellite telemetry solution for ArduPilot controlled drones.</p>
+     <p>SPL allows you to:</p>
+     <ul>
+        <li>Track position, attitude, and velocity of your drones anywhere on Earth.</li>
+        <li>Monitor vital signs signs of your drone, such as battery charge, system status, and temperature.</li>
+        <li>Update missions, parameters, and send commands to your drone.</li>
+        <li>Control gymbals, and RC servos connected to the autopilot.</li>
+     </ul>
+     <p>SPL can also be used together with radio telemetry devices as long range backup channel to track and control drones when they go out of the radio channel range.</p>
+     <p>Essentially, with SPL you can control your drone on the other side of the Earth the same way you do it with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.</p>
+     <img src="images/spl.jpg" alt="Satellite pipeline" style="width: 100%" />
+     <p>SPL is powered by Iridium short burst data (SBD) satellite communication technology provided by <a href="http://www.rock7mobile.com/">Rock Seven Mobile.</a></p>
+     <p>SPL consist of an Arduino sketch for ArduPilot companion computer 
+     <a href="https://github.com/envirover/SPLRadioRoom">SPL Radio Room</a> and 
+     web service application <a href="https://github.com/envirover/SPLGroundControl">SPL Ground Control</a> 
+     that serves as a proxy between ground control stations such as 
+     Mission Planer or QGroundControl and Rock7Core web services.</p>
+     <p>SPL not just transmits messages between autopilot to ground control control stations. It filters messages and aggregates data to adopt MAVLink protocol to high latency asynchronous SBD communication. </p>
+     <p>SPL Radio Room requires the following hardware components:</p>
+     <ul>
+       <li>RockBLOCK Mk2 Iridium satellite communication module.</li>
+       <li>Arduino 101 board.</li>
+       <li>ArduPilot-based autopilot, such as Pixhawk.</li>
+     </ul>
+     <p>With additional RS-232 Arduino shield SPLRadioRoom might also work with RockBLOCK+ and RockFLEET modules.</p>
+     <p>SPL Radio Room an SPL GroundControl are open source software. RockBLOCK MK2 naked communication module costs about 250$, and Arduino 101 is about $30. 
+     RockBLOCK line rental is £10.00 (about $13) per month. 
+     By default SPL Radio Room reports every 15 minutes. Each report costs 1 RockBLOCK credit. 
+     The cost of credits varies from $0.05 to $0.14 depending on the amount of credits purchased. 
+     The reporting period could be changed by setting HL_REPORT_PERIOD on-board parameter.</p>
+
+     <p>SPL Ground Control requires a computer accessible form the Internet. <a href="https://github.com/envirover/SPLGroundControl/wiki/SPLGroundControl-Installation-on-Amazon-AWS">Running SPL Ground Control on Amazon Web Service</a> is probably the easiest way to get started with SPL.</p>
+
+     <p>Envirover is also working on solutions for saving and mapping the reported positions and on researching high-bandwidth satellite communication technologies.</p>
+   </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-16">
+  <p>©Copyright 2017 Envirover</p>
+  <a href="sponsors.html">Contribute to the Project.</a>
+</footer>
+</body>
+</html>
