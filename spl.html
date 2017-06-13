@@ -44,24 +44,24 @@
 <div class="w3-content w3-padding" style="max-width:1564px">
    <div class="w3-container w3-padding-32">
      <img src="images/spl_logo.png" alt="SPL global telemetry">
-     <p>SPL is a global satellite telemetry solution for ArduPilot controlled drones.</p>
-     <p>SPL allows you to:</p>
+     <p>SPL is a global satellite telemetry solution for <a href="http://ardupilot.org/">ArduPilot</a> controlled drones.</p>
+     <p>With SPL you can:</p>
      <ul>
         <li>Track position, attitude, and velocity of your drones anywhere on Earth.</li>
         <li>Monitor vital signs signs of your drone, such as battery charge, system status, and temperature.</li>
-        <li>Update missions, parameters, and send commands to your drone.</li>
+        <li>Update parameters, and send commands and missions to your drone.</li>
         <li>Control gymbals, and RC servos connected to the autopilot.</li>
      </ul>
-     <p>SPL can also be used together with radio telemetry devices as long range backup channel to track and control drones when they go out of the radio channel range.</p>
-     <p>Essentially, with SPL you can control your drone on the other side of the Earth the same way you do it with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.</p>
+     <p>SPL can also be used together with radio telemetry as a long range backup channel to track and control drones if they go out of the radio channel range.</p>
+     <p>Essentially, with SPL you can control your drone on the other side of the Earth almost the same way you do it with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.</p>
      <img src="images/spl.jpg" alt="Satellite pipeline" style="width: 100%" />
-     <p>SPL is powered by Iridium short burst data (SBD) satellite communication technology provided by <a href="http://www.rock7mobile.com/">Rock Seven Mobile.</a></p>
-     <p>SPL consist of an Arduino sketch for ArduPilot companion computer 
+     <p>SPL uses Iridium short burst data (SBD) satellite communication technology provided by <a href="http://www.rock7mobile.com/">Rock Seven Mobile.</a></p>
+     <p>The software consist of an Arduino sketch for ArduPilot companion computer 
      <a href="https://github.com/envirover/SPLRadioRoom">SPL Radio Room</a> and 
      web service application <a href="https://github.com/envirover/SPLGroundControl">SPL Ground Control</a> 
      that serves as a proxy between ground control stations such as 
      Mission Planer or QGroundControl and Rock7Core web services.</p>
-     <p>SPL not just transmits messages between autopilot to ground control control stations. It filters messages and aggregates data to adopt MAVLink protocol to high latency asynchronous SBD communication. </p>
+     <p>SPL not just transmits messages between autopilot and ground control stations. It filters messages and aggregates data to adopt MAVLink protocol to high latency asynchronous SBD communication. </p>
      <p>SPL Radio Room requires the following hardware components:</p>
      <ul>
        <li>RockBLOCK Mk2 Iridium satellite communication module.</li>
@@ -69,7 +69,7 @@
        <li>ArduPilot-based autopilot, such as Pixhawk.</li>
      </ul>
      <p>With additional RS-232 Arduino shield SPLRadioRoom might also work with RockBLOCK+ and RockFLEET modules.</p>
-     <p>SPL Radio Room an SPL GroundControl are open source software. RockBLOCK MK2 naked communication module costs about 250$, and Arduino 101 is about $30. 
+     <p>Iridium SBD is a high latency and low bandwidth messaging technology, yet it is relatively inexpensive, comparing to other global communication solutions. SPL Radio Room an SPL GroundControl are open source software. RockBLOCK MK2 naked communication module costs about 250$, and Arduino 101 is about $30. 
      RockBLOCK line rental is £10.00 (about $13) per month. 
      By default SPL Radio Room reports every 15 minutes. Each report costs 1 RockBLOCK credit. 
      The cost of credits varies from $0.05 to $0.14 depending on the amount of credits purchased. 
@@ -77,7 +77,7 @@
 
      <p>SPL Ground Control requires a computer accessible form the Internet. <a href="https://github.com/envirover/SPLGroundControl/wiki/SPLGroundControl-Installation-on-Amazon-AWS">Running SPL Ground Control on Amazon Web Service</a> is probably the easiest way to get started with SPL.</p>
 
-     <p>Envirover is also working on solutions for saving and mapping the reported positions and on researching high-bandwidth satellite communication technologies.</p>
+     <p>Envirover is also working on solutions for saving, mapping, and processing the reported data as well as researching high-bandwidth satellite communication technologies.</p>
    </div>
 </div>
 <!-- Footer -->
