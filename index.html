@@ -57,61 +57,82 @@
   ga('create', 'UA-86743417-1', 'auto');
   ga('send', 'pageview');
   </script>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+      }
+      x[slideIndex-1].style.display = "block"; 
+  }
+  </script>
 </header>
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding" style="max-width:800px" >
 
-  <div class="w3-row-padding">
-    <div class="w3-col l6 m6 w3-margin-bottom">
-       <a href="spl.html" style="text-decoration: none;">
-         <img src="images/global_telemetry2.jpg" alt="Global Telemetry for Unmanned Vehicles" class="w3-image" />
-       </a>
-    </div>
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <h3><a href="spl.html" style="text-decoration: none;">Global Telemetry for Unmanned Vehicles</a></h3>
-      <p>Control your robots on the other side of the Earth.</p>
-      <a href="spl.html">more...</a>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l6 m6 w3-margin-bottom">
-        <h3><a href="nervous_system.html" style="text-decoration: none;">Nervous System for Planet Earth</a></h3>
-        <p>Environmental intelligence for "Smart Planet".</p>
-        <a href="nervous_system.html">more...</a>
-    </div>
-    <div class="w3-col l6 m6 w3-margin-bottom">
-       <a href="nervous_system.html" style="text-decoration: none;">
-         <img src="images/nervoussystem.jpg" alt="Nervous system for planet Earth" class="w3-image" />
-       </a>
-    </div>
-  </div>
-
+	<div class="w3-display-container">
+		<div class="mySlides">
+		  <div class="w3-row-padding">
+		    <a href="spl.html" style="text-decoration: none;">
+		       <img src="images/global_telemetry2.jpg" alt="Global Telemetry for Unmanned Vehicles" style="width:100%" class="w3-image" />
+		    </a>
+		    <div class="w3-display-topright w3-large w3-container transparent w3-text-white">
+		      <h3><a href="spl.html" style="text-decoration: none;">Global Telemetry for Unmanned Vehicles</a></h3>
+		      <p><a href="spl.html" style="text-decoration: none;">Control your robots on the other side of the Earth.</a></a></p>
+		    </div>
+		  </div>
+		</div>
+		<div class="mySlides" style="display:none">
+		  <div class="w3-row-padding">
+		    <a href="nervous_system.html" style="text-decoration: none;">
+		      <img src="images/nervoussystem.jpg" alt="Nervous system for planet Earth" style="width:100%" class="w3-image" />
+		    </a>
+		    <div class="w3-display-middle w3-large w3-container transparent w3-text-white">
+		      <h3><a href="nervous_system.html" style="text-decoration: none;">Nervous System for Planet Earth</a></h3>
+		      <p><a href="nervous_system.html" style="text-decoration: none;">Environmental intelligence for "Smart Planet".</a></p>
+		    </div>
+		  </div>
+		</div>
+  	    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	
   <!-- Solutions Section -->
   <div class="w3-container w3-padding-32" id="solutions">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">SOLUTIONS</h3>
   </div>
   
   <div class="w3-row-padding">
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <img src="images/monitoring.jpg" alt="Environmental Monitoring" style="width:100%">
+    <div class="w3-col l6 m6 w3-margin-bottom">
+      <img src="images/data_processing.jpg" alt="Environmental Monitoring" style="width:100%">
       <h3>Environmental Monitoring</h3>
       <p>Observations and documentation of physical, chemical, and biological aspects of environment using monitoring equipment installed at the requested site.</p>
       <p><a href="monitoring.html">more...</a></p>
     </div>
-    <div class="w3-col l4 m6 w3-margin-bottom">
+    <div class="w3-col l6 m6 w3-margin-bottom">
       <img src="images/measurements.jpg" alt="Ocean Exploration" style="width:100%">
       <h3>Ocean Exploration</h3>
       <p>Search, observations, and documentation of physical, chemical, and biological aspects of the ocean using unmanned surface vehicles.</p>
       <p><a href="ocean_exploration.html">more...</a></p>
     </div>
+    <!-- 
     <div class="w3-col l4 m6 w3-margin-bottom">
       <img src="images/missions2.jpg" alt="Custom Missions" style="width:100%">
       <h3>Custom Missions</h3>
       <p>Our goal is to be able to measure anything, anywhere, and anytime. We are open to any challenges and welcome any opportunity to provide new or better solutions and 
          push the limits of our technology.</p>
       <p><a href="custom_missions.html">more...</a></p>
-    </div>
+    </div> -->
   </div>
 
   <!-- Technology Section -->
@@ -134,7 +155,7 @@
       <p><a href="platforms.html">more...</a></p>
     </div>
     <div class="w3-col l4 m6 w3-margin-bottom">
-      <img src="images/iridium.jpg" alt="Data Processing" style="width:100%">
+      <img src="images/arcgis.jpg" alt="Data Processing" style="width:100%">
       <h3>Data Processing</h3>
       <p>The data collected by the platforms are automatically processed and converted to the requested data formats and made available for download or as online maps.</p>
       <p><a href="mission_control.html">more...</a></p>
