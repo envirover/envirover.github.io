@@ -1,156 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="utf-8">
-<title>ENVIROVER - Nervous System for Planet Earth</title>
-<link rel="stylesheet" href="w3.css">
-<link rel="icon" href="http://envirover.com/favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Smart devices, smart homes, smart cities,..., and finally a smart planet.">
-<meta name="keywords" content="environmental intelligence, geoneuron, iot, internet of things, aws iot, sensors, usv, gis, iridium, sbd, short burst data, arcgis online, arcgis enterprise">
-<meta name="robots" content="all">
-</head>
-<body>
-	<!-- Navbar (sit on top) -->
-	<div>
-		<ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
-			<li><a href="index.html" class="w3-margin-left"><img
-					id="logo" src="images/logo.png" alt="ENVIROVER" /></a></li>
-			<!-- Float links to the right. Hide them on small screens -->
-			<li class="w3-right w3-hide-small"><a
-				href="index.html#solutions" class="w3-left">SOLUTIONS</a> <a
-				href="index.html#technology" class="w3-left">TECHNOLOGY</a> <a
-				href="index.html#about" class="w3-left">ABOUT</a> <a
-				href="index.html#contacts" class="w3-left w3-margin-right">CONTACTS</a>
-			</li>
-		</ul>
-	</div>
-	<!-- Header -->
-	<header class="w3-display-container w3-content w3-wide"
-		style="max-width: 1500px;" id="home">
-		<script>
-			(function(i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				i[r] = i[r] || function() {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date();
-				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m)
-			})(window, document, 'script',
-					'https://www.google-analytics.com/analytics.js', 'ga');
-
-			ga('create', 'UA-86743417-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</header>
-	<!-- Page content -->
-	<div class="w3-content w3-padding" style="max-width: 1564px">
-		<div class="w3-container w3-padding-32">
-			<h1>Nervous System for Planet Earth</h1>
-			<div class="w3-col">
-				<div class="w3-half w3-right w3-serif">
-					<p>
-						<i>“Gradually, GIS technology will evolve into a nervous
-							system for our planet where we, on an ongoing basis, measure and
-							encapsulate knowledge, share it, and respond to issues that
-							people care about and that need to be attended to around the
-							world.”</i>
-					</p>
-					<p class="w3-right">Jack Dangermond, President of Esri</p>
-				</div>
-			</div>
-			<p>&nbsp;</p>
-			<p>Smart devices, smart homes, smart cities,..., and finally a
-				smart planet.</p>
-			<p>To be “smart,” the planet would certainly need a brain or two.
-				To make smart decisions and turn them into smart actions, the brain
-				will need to know what’s going on. Even a very smart brain is
-				useless without a system that collects sensory information about the
-				environment and transmits “action items” from the brain to the
-				muscles that actually do the work.</p>
-			<p>Remote sensing technologies, such as satellite imagery, are
-				similar to vision in a biological nervous system. These technologies
-				provide a wealth of data about the planet, but, in many cases,
-				sensors must be “there” and must interact with the environment to
-				make measurements. In addition to vision, the planet needs
-				fingertips that are able to touch and scratch the surface.</p>
-			<div
-				class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-left w3-border-grey">
-				<b>GeoNeurons and USVs are like fingertips used to touch and
-					scratch the planet’s surface.</b>
-				<img src="images/stationary_platform.jpg" alt="GeoNeuron"
-					style="width: 100%" />
-			</div>
-			<p>Envirover’s <a href="platforms.html#stationary_platform">GeoNeuron</a> is a device that functions like a
-				biological neuron in that it exchanges information between sensors,
-				actuators, and a <a href="mission_control.html">data processing system</a>.</p>
-			<p>GeoNeuron has two sets of registers, i.e., input registers and
-				output registers. Input registers maintain the current state of
-				connected sensors. Output registers keep the desired state of
-				actuators (i.e., servos that control gymbals, winches, or sampling
-				devices). During communication sessions, the content of the input
-				registers is sent to the device “shadow” in the communication
-				medium, such as <a href="https://aws.amazon.com/iot">Amazon Web Services Internet of Things (AWS IoT)</a>,
-				and the content of the output registers is received from the same
-				source.</p>
-			<p>Out of the box, GeoNeuron supports several types of water and
-				air-quality <a href="sensors.html">sensors</a>. It also supports integration with <a href="https://www.campbellsci.com/dataloggers">Campbell
-				Scientific dataloggers</a>, which can read a wide variety of measurement
-				sensors.</p>
-			<p>GeoNeuron uses the <a href="https://www.iridium.com/services/details/iridium-sbd">Iridium Short Burst Data (SBD)</a> satellite
-				network for communication with the Internet. The Iridium SBD network
-				was not designed to transmit large datasets, such as pictures or
-				videos; rather, it is a simple and efficient network that provides
-				the capability of transmitting short data messages, providing global coverage.</p>
-			<div
-				class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-right w3-border-grey">
-				<b>AWS IoT is the spinal cord of the planet’s nervous system.</b>
-				<img src="images/iot.png" alt="AWS IoT" style="width: 100%" />
-			</div>
-			<p>The AWS IoT communication medium is analogous to the spinal
-				cord in a nervous system. It is used to exchange information between
-				the “brain” and GeoNeurons, and it also triggers alerts, logs data,
-				and routes the information flow in the system.</p>
-			<p>Sometimes getting “there” requires too much time and money.
-				And sometimes, it is not even know where the “there” actually is.
-				This is when unmanned vehicles come into play.</p>
-			<p>Envirover’s <a href="platforms.html#raider_2">unmanned surface vehicles (USVs)</a> and other mobile
-				platforms are essentially GeoNeurons with propulsion and steering.
-				These platforms have a guidance, navigation, and control (GN&C)
-				system that also is known as ‘autopilot.’ Autopilot obtains the
-				actual position, orientation, and velocity from the GPS,
-				magnetometer, and inertial measurement unit, respectively, and
-				controls the propulsion and steering to move to the desired point,
-				follow the desired path, or “scan” the desired area. The autopilot
-				also can perform sensor-based guidance, e.g., it can find places
-				with the smallest/greatest readings of a certain sensor by using
-				gradient-descent search.</p>
-			<p>Multiple GeoNeurons or mobile platforms distributed over a
-				certain area can be used to solve complex, data-collection problems.</p>
-			<div
-				class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-left w3-border-grey">
-				<b>ArcGIS is the brain of the planet’s nervous system.</b>
-				<img src="images/arcgis.jpg" alt="ArcGIS" style="width: 100%" />
-			</div>
-			<p>The actual and desired states of GeoNeurons and mobile
-				platforms can be synchronized with spatial databases in geographic
-				information systems (GISs) on the web, such as <a href="https://www.arcgis.com/home/index.html">ArcGIS Online</a> or
-				<a href="http://www.esri.com/en/arcgis/products/arcgis-enterprise/Overview">ArcGIS Enterprise</a>. The desired states of the devices can be changed
-				by simply changing the attributes in a table. GIS can be used to
-				store, visualize, and analyze the collected data and to control the
-				data “collectors” with complex orchestration.</p>
-			<p>In Envirover, we assess new ways of exploring our planet.
-				Envirover’s mission is to make our planet smarter by providing
-				next-generation, environmental intelligence solutions.</p>
+---
+title: ENVIROVER - Nervous System for Planet Earth
+layout: default
+keywords: environmental intelligence, geoneuron, iot, internet of things, aws iot, sensors, usv, gis, iridium, sbd, short burst data, arcgis online, arcgis enterprise
+description: Smart devices, smart homes, smart cities,..., and finally a smart planet.
+permalink: nervous_system.html
+---
+<div class="w3-container w3-padding-32">
+	<h1>Nervous System for Planet Earth</h1>
+	<div class="w3-col">
+		<div class="w3-half w3-right w3-serif">
+			<p>
+				<i>“Gradually, GIS technology will evolve into a nervous
+					system for our planet where we, on an ongoing basis, measure and
+					encapsulate knowledge, share it, and respond to issues that
+					people care about and that need to be attended to around the
+					world.”</i>
+			</p>
+			<p class="w3-right">Jack Dangermond, President of Esri</p>
 		</div>
 	</div>
-	<!-- Footer -->
-	<footer class="w3-center w3-blue w3-padding-16">
-		<p>©Copyright 2017 Envirover</p>
-		<a href="sponsors.html">Contribute to the Project.</a>
-	</footer>
-</body>
-</html>
+	<p>&nbsp;</p>
+	<p>Smart devices, smart homes, smart cities,..., and finally a
+		smart planet.</p>
+	<p>To be “smart,” the planet would certainly need a brain or two.
+		To make smart decisions and turn them into smart actions, the brain
+		will need to know what’s going on. Even a very smart brain is
+		useless without a system that collects sensory information about the
+		environment and transmits “action items” from the brain to the
+		muscles that actually do the work.</p>
+	<p>Remote sensing technologies, such as satellite imagery, are
+		similar to vision in a biological nervous system. These technologies
+		provide a wealth of data about the planet, but, in many cases,
+		sensors must be “there” and must interact with the environment to
+		make measurements. In addition to vision, the planet needs
+		fingertips that are able to touch and scratch the surface.</p>
+	<div
+		class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-left w3-border-grey">
+		<b>GeoNeurons and USVs are like fingertips used to touch and
+			scratch the planet’s surface.</b>
+		<img src="images/stationary_platform.jpg" alt="GeoNeuron"
+			style="width: 100%" />
+	</div>
+	<p>Envirover’s <a href="platforms.html#stationary_platform">GeoNeuron</a> is a device that functions like a
+		biological neuron in that it exchanges information between sensors,
+		actuators, and a <a href="mission_control.html">data processing system</a>.</p>
+	<p>GeoNeuron has two sets of registers, i.e., input registers and
+		output registers. Input registers maintain the current state of
+		connected sensors. Output registers keep the desired state of
+		actuators (i.e., servos that control gymbals, winches, or sampling
+		devices). During communication sessions, the content of the input
+		registers is sent to the device “shadow” in the communication
+		medium, such as <a href="https://aws.amazon.com/iot">Amazon Web Services Internet of Things (AWS IoT)</a>,
+		and the content of the output registers is received from the same
+		source.</p>
+	<p>Out of the box, GeoNeuron supports several types of water and
+		air-quality <a href="sensors.html">sensors</a>. It also supports integration with <a href="https://www.campbellsci.com/dataloggers">Campbell
+		Scientific dataloggers</a>, which can read a wide variety of measurement
+		sensors.</p>
+	<p>GeoNeuron uses the <a href="https://www.iridium.com/services/details/iridium-sbd">Iridium Short Burst Data (SBD)</a> satellite
+		network for communication with the Internet. The Iridium SBD network
+		was not designed to transmit large datasets, such as pictures or
+		videos; rather, it is a simple and efficient network that provides
+		the capability of transmitting short data messages, providing global coverage.</p>
+	<div
+		class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-right w3-border-grey">
+		<b>AWS IoT is the spinal cord of the planet’s nervous system.</b>
+		<img src="images/iot.png" alt="AWS IoT" style="width: 100%" />
+	</div>
+	<p>The AWS IoT communication medium is analogous to the spinal
+		cord in a nervous system. It is used to exchange information between
+		the “brain” and GeoNeurons, and it also triggers alerts, logs data,
+		and routes the information flow in the system.</p>
+	<p>Sometimes getting “there” requires too much time and money.
+		And sometimes, it is not even know where the “there” actually is.
+		This is when unmanned vehicles come into play.</p>
+	<p>Envirover’s <a href="platforms.html#raider_2">unmanned surface vehicles (USVs)</a> and other mobile
+		platforms are essentially GeoNeurons with propulsion and steering.
+		These platforms have a guidance, navigation, and control (GN&C)
+		system that also is known as ‘autopilot.’ Autopilot obtains the
+		actual position, orientation, and velocity from the GPS,
+		magnetometer, and inertial measurement unit, respectively, and
+		controls the propulsion and steering to move to the desired point,
+		follow the desired path, or “scan” the desired area. The autopilot
+		also can perform sensor-based guidance, e.g., it can find places
+		with the smallest/greatest readings of a certain sensor by using
+		gradient-descent search.</p>
+	<p>Multiple GeoNeurons or mobile platforms distributed over a
+		certain area can be used to solve complex, data-collection problems.</p>
+	<div
+		class="w3-third w3-margin-right w3-padding-left w3-padding-top w3-padding-bottom w3-padding-right w3-left w3-border-grey">
+		<b>ArcGIS is the brain of the planet’s nervous system.</b>
+		<img src="images/arcgis.jpg" alt="ArcGIS" style="width: 100%" />
+	</div>
+	<p>The actual and desired states of GeoNeurons and mobile
+		platforms can be synchronized with spatial databases in geographic
+		information systems (GISs) on the web, such as <a href="https://www.arcgis.com/home/index.html">ArcGIS Online</a> or
+		<a href="http://www.esri.com/en/arcgis/products/arcgis-enterprise/Overview">ArcGIS Enterprise</a>. The desired states of the devices can be changed
+		by simply changing the attributes in a table. GIS can be used to
+		store, visualize, and analyze the collected data and to control the
+		data “collectors” with complex orchestration.</p>
+	<p>In Envirover, we assess new ways of exploring our planet.
+		Envirover’s mission is to make our planet smarter by providing
+		next-generation, environmental intelligence solutions.</p>
+</div>

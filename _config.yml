@@ -1,0 +1,10 @@
+# site settings
+title: ENVIROVER - Environmental Intelligence
+author: Pavel Bobov
+description: "Envirover explores new ways of exploring our planet. Our mission is providing efficient solutions for collecting environmental data."
+
+# build settings
+port: 4000
+highlighter: pygments
+markdown: kramdown
+permalink: pretty
