@@ -5,6 +5,6 @@ description: "Envirover explores new ways of exploring our planet. Our mission i
 
 # build settings
 port: 4000
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
