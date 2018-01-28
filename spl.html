@@ -2,43 +2,31 @@
 title: ENVIROVER - SPL Global Telemetry
 layout: default
 keywords: ardupilot, px4, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
-description: Global satellite telemetry for unmanned vehices. Could control your robot on the other side of the Earth.
+description: Global satellite telemetry for unmanned vehices. 
 permalink: spl.html
 ---
 <div class="w3-container w3-padding-32">
-  <img src="images/spl_logo.png" alt="SPL global telemetry">
-  <p>SPL is a global satellite telemetry solution for unmanned vehicles controlled by <a href="http://ardupilot.org/">ArduPilot</a>.</p>
-  <p>With SPL you can:</p>
-  <ul>
-     <li>Track position, attitude, and velocity of your vehicles anywhere on Earth.</li>
-     <li>Monitor vital signs of your vehicles, such as battery charge, system status, and temperature.</li>
-     <li>Update on-board parameters and send commands and missions to your vehicles.</li>
-     <li>Control gymbals, and RC servos connected to autopilots.</li>
-  </ul>
-  <p>SPL can also be used together with radio telemetry as a long range backup channel to track and control vehicles if they leave radio channel range.</p>
-  <p>Essentially, with SPL you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.</p>
-  <p>Not only does SPL transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous SBD communication.</p>
-  <img src="images/SPL-2.0.jpg" alt="Satellite pipeline" style="width: 100%" />
-  
-  <p>SPL uses Iridium short burst data (SBD) satellite communication technology provided by <a href="http://www.rock7mobile.com/">Rock Seven Mobile</a>. 
-  Iridium SBD is a high latency, low bandwidth messaging technology, yet it is relatively inexpensive compared to other global communication solutions. The required hardware is very compact and lightweight.</p>
-  <p>The SPL software suite autopilot companion computer firmware called <a href="https://github.com/envirover/SPLRadioRoom">SPL Radio Room</a> for ArduPilot companion computer 
-   and a web service application called <a href="https://github.com/envirover/SPLGroundControl">SPL Ground Control</a>, 
-  which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services.
-  SPL RadioRoom and SPL Ground Control are open source software.</p>
-  
-  <p>SPL RadioRoom requires the following hardware components:</p>
-  <ul>
-    <li><a href="http://www.rock7mobile.com/products-rockblock">RockBLOCK Mk2</a> Iridium satellite communication module</li>
-    <li><a href="https://www.raspberrypi.org/">Raspberry Pi</a> or <a href="https://www.arduino.cc/en/Main/ArduinoBoard101">Arduino 101</a> board</li>
-    <li><a href="http://ardupilot.org/dev/docs/supported-autopilot-controller-boards.html">An ArduPilot-based autopilot</a>, such as Pixhawk</li>
-  </ul>
-  <p>SPL RadioRoom could also work with RockBLOCK+ and RockFLEET modules if additional RS-232 Arduino shield are used.</p>
+	<img src="images/global_telemetry2.jpg" alt="SPL Global Telemetry">
+	<p>
+		SPL is a global satellite telemetry system for autonomous vehicles
+		controlled by <a href="http://ardupilot.org/">ArduPilot</a> or <a
+			href="http://px4.io/">PX4</a> autopilots that uses Iridium short
+		burst data (ISBD) satellite communication technology provided by <a
+			href="http://www.rock7mobile.com/products-rockblock">Rock Seven
+			Mobile</a>.
+	</p>
 
-  <p>SPL Ground Control requires a computer accessible over the Internet. 
-  <a href="https://github.com/envirover/SPLGroundControl/wiki/SPLGroundControl-Installation-on-Amazon-AWS">Running SPL Ground Control on Amazon AWS</a> is probably the easiest way to get started with SPL.</p>
-  
-  <p>Optional SPL Stream and SPL Tracks web services could be used to store and visualize the vehicle tracks.</p>
-  
-  <p>Envirover is also working on solutions for saving, mapping, and processing the reported data as well as researching high-bandwidth satellite communication technologies.</p>
+	<p>ISBD is a high latency, low bandwidth messaging technology, yet
+		it is relatively inexpensive compared to other global communication
+		solutions. The required hardware is very compact and lightweight.</p>
+
+	<p>With SPL you can track, command, and control your solar powered
+		boats, planes, blimps, and other autonomous vehicle from the other
+		side of the Earth.</p>
+
+	<p>SPL works with popular ground control stations (GCS) such as <a
+		href="http://ardupilot.org/planner/">Mission Planner</a>, <a
+		href="http://qgroundcontrol.com/">QGroundControl</a>.</p>
+		
+	<p>See <a href="http://envirover.com/docs/spl.html">Envirover docs</a> for the instructions on SPL installation and operation.</p>
 </div>
